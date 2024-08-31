@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Conversor de Monedas</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="titulo-nav">
+                <h3>Conversor de Moneda</h3>
+            </div>
+            <div class="idioma">
+                <img src="./img/espana.png" id="espana">
+                <i class="bi bi-caret-down-fill"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="cantidad">
+                    <div class="titulo">
+                        <h4>Cantidad:</h4>
+                    </div>               
+                    <div class="input-cantidad">
+                      <input type="number" id="cantidad">
+                    </div>                    
+                </div>
+                <div class="moneda">
+                    <div class="titulo-2">
+                        <h4>Desde la Divisa:</h4>                      
+                    </div>
+                    <div class="input-cantidad">
+                        <select id="pais-origen">
+                            <option selected id="Chile" value="CLP">Peso Chileno (CLP)</option>
+                            <option id="Japon" value="JPY">Japon (JPY)</option>
+                            <option id="USA" value="USD">Dolares Estadounidense (USD)</option>
+                            <option id="Euro" value="EUR">Euro (EUR)</option>
+                        </select>
+                    </div>       
+                </div>
+                <div class="boton-flechas" id="cambiar-valor">
+                    <button type="button"><i class="bi bi-arrow-left-right"></i></button>
+                </div>
+                <div class="moneda-cambiar">
+                    <div class="titulo-3">                      
+                        <h4>A la Divisa:</h4>
+                    </div>
+                    <div class="input-cantidad">
+                        <select id="pais-destino">
+                            <option id="Chile" value="CLP">Peso Chileno (CLP)</option>
+                            <option id="Japon" value="JPY">Japon (JPY)</option>
+                            <option id="USA" value="USD">Dolares Estadounidense (USD)</option>
+                            <option selected id="Euro" value="EUR">Euro (EUR)</option>
+                        </select>   
+                    </div>             
+                </div>
+            </div>
+            <div class="pantalla-resultado">
+                <span></span><span> Ingresa una cantidad </span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
